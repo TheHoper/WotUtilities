@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": [
+    {
+      "active_battles": [],
+      "is_borders_disabled": false,
+      "front_name": "iron_age_eu_league1",
+      "max_bets": 1,
+      "arena_name": "Himmelsdorf",
+      "attackers": [],
+      "neighbours": [
+        "alamogordo",
+        "ciudadjuarez",
+        "elpaso",
+        "minero",
+        "silvercity",
+        "truthorconsequences"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Las Cruces",
+      "status": null,
+      "arena_id": "04_himmelsdorf",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2022-07-24T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "lascruces",
+      "landing_type": null,
+      "owner_clan_id": 500072741,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/lascruces",
+      "server": "EU2",
+      "competitors": [],
+      "round_number": null,
+      "front_id": "iron_age_eu_league1"
+    }
+  ]
+}

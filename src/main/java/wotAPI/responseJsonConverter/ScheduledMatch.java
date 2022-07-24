@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class ScheduledMatch {
     @SerializedName(value = "attack_type")
-    private String appackType;
+    private String attackType;
 
     @SerializedName(value = "front_id")
     private String frondID;
@@ -31,8 +31,8 @@ public class ScheduledMatch {
     @SerializedName(value = "province_name")
     private String provinceName;
 
-    public ScheduledMatch(String appackType, String frondID, String frontName, Long competitorID, Long scheduledTime, Long vehicleLevel, String provinceID, String type, String provinceName) {
-        this.appackType = appackType;
+    public ScheduledMatch(String attackType, String frondID, String frontName, Long competitorID, Long scheduledTime, Long vehicleLevel, String provinceID, String type, String provinceName) {
+        this.attackType = attackType;
         this.frondID = frondID;
         this.frontName = frontName;
         this.competitorID = competitorID;
@@ -44,8 +44,8 @@ public class ScheduledMatch {
     }
 
 
-    public String getAppackType() {
-        return appackType;
+    public String getAttackType() {
+        return attackType;
     }
 
     public String getFrondID() {
@@ -83,7 +83,7 @@ public class ScheduledMatch {
     @Override
     public String toString() {
         return "ResponseJsonConverter.ScheduledMatch{" +
-                "appackType='" + appackType + '\'' +
+                "appackType='" + attackType + '\'' +
                 ", frondID='" + frondID + '\'' +
                 ", frontName='" + frontName + '\'' +
                 ", competitorID=" + competitorID +

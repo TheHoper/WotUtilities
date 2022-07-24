@@ -1,8 +1,6 @@
 package wotAPI;
 
-import wotAPI.responseJsonConverter.Response;
-import wotAPI.responseJsonConverter.ScheduledMatch;
-import wotAPI.responseJsonConverter.ScheduledMatchesResponse;
+import wotAPI.responseJsonConverter.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.apache.http.client.utils.URIBuilder;
@@ -15,7 +13,10 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class WotApiConnector {
 
@@ -27,7 +28,7 @@ public class WotApiConnector {
         HttpRequest req = HttpRequest.newBuilder(buildClanScheduledMatchesUri(applicationID, clanID))
                 .GET()
                 .build();
-       // HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
+        // HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
 
         //---------------------------Mock--------------------------------------
         StringBuilder sb = new StringBuilder();
@@ -54,24 +55,63 @@ public class WotApiConnector {
         return respWithSchedMatches.getData();
     }
 
+
+    public String getClanNameFromID(String clanID) throws IOException, InterruptedException, URISyntaxException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest req = HttpRequest.newBuilder(buildClanNameUri(applicationID, clanID))
+                .GET()
+                .build();
+
+        HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
+        String clanTagPattern = "\"tag\":\"(.*?)\"";
+        Pattern p = Pattern.compile(clanTagPattern);
+        Matcher m = p.matcher(response.body());
+        String clantag = null;
+        if (m.find()) {
+            clantag = m.group(0);
+        }
+        return clantag;
+    }
+
+    public String getMapNameFromProvinceID(String frontID, String provinceID) throws IOException, InterruptedException, URISyntaxException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest req = HttpRequest.newBuilder(buildMapNameUri(applicationID, frontID, provinceID))
+                .GET()
+                .build();
+        HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
+        JsonObject obj = new Gson().fromJson(response.body(), JsonObject.class);
+
+        Gson gson = new Gson();
+        Response<Province> respWithProvinces = gson.fromJson(obj.getAsJsonObject(), ProvinceResponse.class);
+        return respWithProvinces.getData().get(0).getMapName();
+    }
+
+
     private URI buildClanScheduledMatchesUri(String applicationID, String clanID) throws URISyntaxException {
         URI clanRequestUri = new URIBuilder(WotApiUris.clanbattlesBaseUrl)
+                .addParameter("application_id", applicationID)
+                .addParameter("clan_id", clanID)
+                .addParameter("fields", "tag")
+                .build();
+        return clanRequestUri;
+    }
+
+    private URI buildClanNameUri(String applicationID, String clanID) throws URISyntaxException {
+        URI clanRequestUri = new URIBuilder(WotApiUris.clanRequestBaseUrl)
                 .addParameter("application_id", applicationID)
                 .addParameter("clan_id", clanID)
                 .build();
         return clanRequestUri;
     }
 
-    public String getClanNameFromID(Integer clanID){
-        return "";
+    private URI buildMapNameUri(String applicationID, String frontID, String provinceID) throws URISyntaxException {
+        URI provinceBaseUrl = new URIBuilder(WotApiUris.provinceBaseUrl)
+                .addParameter("application_id", applicationID)
+                .addParameter("front_id", frontID)
+                .addParameter("province_id", provinceID)
+                .build();
+        return provinceBaseUrl;
     }
-
-    public String getProvinceNameFromID(Integer provinceID){
-        return"";
-    }
-
-
-
 
 
 }

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="" />
+    <list default="true" id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ResponseClan.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ResponseProvince.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiUris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiUris.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/Province.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ProvinceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ProvinceResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ScheduledMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ScheduledMatch.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +25,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2CMUqwxUASAuvrBCEuJgiP607An" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -100,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658612141547</updated>
       <workItem from="1658612145682" duration="4566000" />
-      <workItem from="1658640450527" duration="3601000" />
+      <workItem from="1658640450527" duration="8752000" />
     </task>
     <servers />
   </component>
@@ -108,10 +124,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1658643359164">
+    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1658647675390">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643359164" />
+    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647675390" />
     <state x="786" y="543" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1658643901153">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
@@ -120,22 +136,26 @@
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
     <state x="893" y="477" width="407" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643071648" />
-    <state width="2151" height="205" key="GridCell.Tab.0.bottom" timestamp="1658643930798">
+    <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1658647596162">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="205" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
-    <state width="2151" height="205" key="GridCell.Tab.0.center" timestamp="1658643930798">
+    <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647596162" />
+    <state width="2151" height="472" key="GridCell.Tab.0.bottom" timestamp="1658647917749">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="205" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
-    <state width="2151" height="205" key="GridCell.Tab.0.left" timestamp="1658643930798">
+    <state width="2151" height="472" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
+    <state width="2151" height="472" key="GridCell.Tab.0.center" timestamp="1658647917749">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="205" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
-    <state width="2151" height="205" key="GridCell.Tab.0.right" timestamp="1658643930798">
+    <state width="2151" height="472" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
+    <state width="2151" height="472" key="GridCell.Tab.0.left" timestamp="1658647917749">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="205" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
+    <state width="2151" height="472" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
+    <state width="2151" height="472" key="GridCell.Tab.0.right" timestamp="1658647917749">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="472" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
     <state x="628" y="272" key="Maven.ArtifactSearchDialog" timestamp="1658613229194">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
@@ -144,6 +164,10 @@
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>
     <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658644044367" />
+    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2" timestamp="1658648654135">
+      <screen x="-1680" y="1097" width="1344" height="800" />
+    </state>
+    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658648654135" />
     <state x="828" y="383" key="extract.method.dialog" timestamp="1658642456524">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
