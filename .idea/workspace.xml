@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ResponseClan.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ResponseProvince.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/SeleniumComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/WhatsappUris.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/chromedriver103.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/chromedriver104.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiUris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiUris.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/Province.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ProvinceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ProvinceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ScheduledMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/responseJsonConverter/ScheduledMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +37,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/whatsappSelenium" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\uni\WOTkampaClient\src\main\java\whatsappSelenium" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SeleniumComponent">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -64,6 +63,20 @@
       <option name="MAIN_CLASS_NAME" value="functionalities.ScheduledMatchesWhatsapp" />
       <module name="WOTkampaClient" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whatsappSelenium.SeleniumComponent" />
+      <module name="WOTkampaClient" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="whatsappSelenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SeleniumComponent" />
         <item itemvalue="Application.ScheduledMatchesWhatsapp" />
       </list>
     </recent_temporary>
@@ -116,7 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1658612141547</updated>
       <workItem from="1658612145682" duration="4566000" />
-      <workItem from="1658640450527" duration="8752000" />
+      <workItem from="1658640450527" duration="8821000" />
+      <workItem from="1658668833004" duration="4792000" />
     </task>
     <servers />
   </component>
@@ -140,34 +155,38 @@
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
     <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647596162" />
-    <state width="2151" height="472" key="GridCell.Tab.0.bottom" timestamp="1658647917749">
+    <state width="2151" height="472" key="GridCell.Tab.0.bottom" timestamp="1658672649562">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
-    <state width="2151" height="472" key="GridCell.Tab.0.center" timestamp="1658647917749">
+    <state width="2151" height="472" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
+    <state width="2151" height="472" key="GridCell.Tab.0.center" timestamp="1658672649562">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
-    <state width="2151" height="472" key="GridCell.Tab.0.left" timestamp="1658647917749">
+    <state width="2151" height="472" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
+    <state width="2151" height="472" key="GridCell.Tab.0.left" timestamp="1658672649562">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
-    <state width="2151" height="472" key="GridCell.Tab.0.right" timestamp="1658647917749">
+    <state width="2151" height="472" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
+    <state width="2151" height="472" key="GridCell.Tab.0.right" timestamp="1658672649562">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647917749" />
-    <state x="628" y="272" key="Maven.ArtifactSearchDialog" timestamp="1658613229194">
+    <state width="2151" height="472" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
+    <state x="628" y="272" key="Maven.ArtifactSearchDialog" timestamp="1658669674280">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state x="628" y="272" key="Maven.ArtifactSearchDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658613229194" />
+    <state x="628" y="272" key="Maven.ArtifactSearchDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658669674280" />
+    <state x="-1304" y="1364" key="com.intellij.ide.util.TipDialog" timestamp="1658668833418">
+      <screen x="-1680" y="1097" width="1344" height="800" />
+    </state>
+    <state x="-1304" y="1364" key="com.intellij.ide.util.TipDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658668833418" />
     <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1" timestamp="1658644044367">
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>
     <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658644044367" />
-    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2" timestamp="1658648654135">
+    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2" timestamp="1658668923770">
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>
-    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658648654135" />
+    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658668923770" />
     <state x="828" y="383" key="extract.method.dialog" timestamp="1658642456524">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
