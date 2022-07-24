@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CMUqwxUASAuvrBCEuJgiP607An" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration name="ScheduledMatchesWhatsapp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functionalities.ScheduledMatchesWhatsapp" />
+      <module name="WOTkampaClient" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ScheduledMatchesWhatsapp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="" />
+      <created>1658612141547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658612141547</updated>
+      <workItem from="1658612145682" duration="4566000" />
+      <workItem from="1658640450527" duration="3601000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1658643359164">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643359164" />
+    <state x="786" y="543" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1658643901153">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state x="786" y="543" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643901153" />
+    <state x="893" y="477" width="407" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1658643071648">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state x="893" y="477" width="407" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643071648" />
+    <state width="2151" height="205" key="GridCell.Tab.0.bottom" timestamp="1658643930798">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="205" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
+    <state width="2151" height="205" key="GridCell.Tab.0.center" timestamp="1658643930798">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="205" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
+    <state width="2151" height="205" key="GridCell.Tab.0.left" timestamp="1658643930798">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="205" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
+    <state width="2151" height="205" key="GridCell.Tab.0.right" timestamp="1658643930798">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="205" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658643930798" />
+    <state x="628" y="272" key="Maven.ArtifactSearchDialog" timestamp="1658613229194">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state x="628" y="272" key="Maven.ArtifactSearchDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658613229194" />
+    <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1" timestamp="1658644044367">
+      <screen x="-1680" y="1097" width="1344" height="800" />
+    </state>
+    <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658644044367" />
+    <state x="828" y="383" key="extract.method.dialog" timestamp="1658642456524">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state x="828" y="383" key="extract.method.dialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658642456524" />
+    <state x="760" y="274" width="672" height="678" key="search.everywhere.popup" timestamp="1658614252300">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state x="760" y="274" width="672" height="678" key="search.everywhere.popup/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658614252300" />
+  </component>
+</project>

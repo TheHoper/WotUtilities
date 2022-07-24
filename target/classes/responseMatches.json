@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 2
+  },
+  "data": [
+    {
+      "attack_type": "tournament",
+      "front_id": "iron_age_eu_league1",
+      "front_name": "iron_age_eu_league1",
+      "competitor_id": 500171909,
+      "time": 1658606400,
+      "vehicle_level": 10,
+      "province_id": "lascruces",
+      "type": "attack",
+      "province_name": "Las Cruces"
+    },
+    {
+      "attack_type": "tournament",
+      "front_id": "iron_age_eu_league1",
+      "front_name": "iron_age_eu_league1",
+      "competitor_id": 500025563,
+      "time": 1658607300,
+      "vehicle_level": 10,
+      "province_id": "alamogordo",
+      "type": "attack",
+      "province_name": "Alamogordo"
+    }
+  ]
+}
