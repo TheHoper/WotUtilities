@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/SeleniumComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/WhatsappUris.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/chromedriver103.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/chromedriver104.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whatsappSelenium/SeleniumComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/SeleniumComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/whatsappSelenium/SeleniumComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whatsappSelenium/SeleniumComponent.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -51,7 +50,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SeleniumComponent">
+  <component name="RunManager" selected="Application.ScheduledMatchesWhatsapp">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -114,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SeleniumComponent" />
         <item itemvalue="Application.ScheduledMatchesWhatsapp" />
+        <item itemvalue="Application.SeleniumComponent" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +130,7 @@
       <updated>1658612141547</updated>
       <workItem from="1658612145682" duration="4566000" />
       <workItem from="1658640450527" duration="8821000" />
-      <workItem from="1658668833004" duration="4792000" />
+      <workItem from="1658668833004" duration="8634000" />
     </task>
     <servers />
   </component>
@@ -155,22 +154,22 @@
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
     <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647596162" />
-    <state width="2151" height="472" key="GridCell.Tab.0.bottom" timestamp="1658672649562">
+    <state width="2151" height="435" key="GridCell.Tab.0.bottom" timestamp="1658677712909">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
-    <state width="2151" height="472" key="GridCell.Tab.0.center" timestamp="1658672649562">
+    <state width="2151" height="435" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658677712909" />
+    <state width="2151" height="435" key="GridCell.Tab.0.center" timestamp="1658677712908">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
-    <state width="2151" height="472" key="GridCell.Tab.0.left" timestamp="1658672649562">
+    <state width="2151" height="435" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658677712908" />
+    <state width="2151" height="435" key="GridCell.Tab.0.left" timestamp="1658677712908">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
-    <state width="2151" height="472" key="GridCell.Tab.0.right" timestamp="1658672649562">
+    <state width="2151" height="435" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658677712908" />
+    <state width="2151" height="435" key="GridCell.Tab.0.right" timestamp="1658677712909">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="472" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658672649562" />
+    <state width="2151" height="435" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658677712909" />
     <state x="628" y="272" key="Maven.ArtifactSearchDialog" timestamp="1658669674280">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
@@ -183,10 +182,10 @@
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>
     <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658644044367" />
-    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2" timestamp="1658668923770">
+    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2" timestamp="1658675853448">
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>
-    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658668923770" />
+    <state x="-1680" y="1097" width="1358" height="886" key="dock-window-2/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658675853448" />
     <state x="828" y="383" key="extract.method.dialog" timestamp="1658642456524">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>

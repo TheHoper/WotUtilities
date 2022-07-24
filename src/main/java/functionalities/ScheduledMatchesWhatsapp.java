@@ -1,6 +1,7 @@
 package functionalities;
 
 import customDataObjects.MatchToDisplay;
+import whatsappSelenium.SeleniumComponent;
 import wotAPI.WotApiConnector;
 import wotAPI.responseJsonConverter.ScheduledMatch;
 
@@ -21,8 +22,12 @@ public class ScheduledMatchesWhatsapp {
             MatchToDisplay mtd = getMoreInfo(match, con);
             matchlist.add(mtd);
         }
-
-        matchlist.forEach(System.out::print);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Das sind unsere Matches heute (das ist ein Test die daten sind gemocked und nicht aktuell) \r");
+        matchlist.forEach(matchToDisplay -> sb.append("wir spielen gegen: " + matchToDisplay.getCompetitorClan() +" auf "+matchToDisplay.getMapName()+ " um Provinz "+matchToDisplay.getProvinceName()+" um so viel Uhr "+ matchToDisplay.getDate() +"\r"));
+        String message = sb.toString();
+        SeleniumComponent whatsappSender = new SeleniumComponent();
+        whatsappSender.sendMessageToWhatsappGroup("Kino",message);
 
     }
 
