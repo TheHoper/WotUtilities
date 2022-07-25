@@ -42,7 +42,7 @@ public class ScheduledMatchesWhatsapp {
 
             previousMatches.addAll(newMatches);
             System.out.println("sleeping now ");
-            Thread.sleep(30000);
+            Thread.sleep(120000);
         }
     }
 

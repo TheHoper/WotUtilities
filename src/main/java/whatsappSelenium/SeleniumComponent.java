@@ -13,6 +13,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,19 +27,19 @@ public class SeleniumComponent {
         System.setProperty("webdriver.chrome.driver", "src/main/java/whatsappSelenium/chromedriver103.exe");
 
         ChromeOptions options = new ChromeOptions();
-        File file = new File("src/main/resources/chromeWhatsappTestProfile");
-        String fullyQualifiedPath = file.getAbsolutePath();
+        File profile = new File("src/main/resources/chromeWhatsappTestProfile");
+
+        String fullyQualifiedPath = profile.getAbsolutePath();
         System.out.println(fullyQualifiedPath);
 
+        options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         options.addArguments("--hide-scrollbars");
         options.addArguments("--disable-gpu");
         options.addArguments("--user-data-dir=" + fullyQualifiedPath);
         options.addArguments("-remote-debugging-port=9014");
-        options.getCapabilityNames().forEach(System.out::println);
-        //WebDriver driver = new ChromeDriver(ChromeDriverService.createDefaultService(), options);
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver(ChromeDriverService.createDefaultService(), options);
 
 
         try {

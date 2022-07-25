@@ -46,7 +46,7 @@ public class WotApiConnector {
                 .GET()
                 .build();
 
-        boolean mocked = true;
+        boolean mocked = false;
         JsonObject obj;
         if (mocked) {
             StringBuilder sb = new StringBuilder();
