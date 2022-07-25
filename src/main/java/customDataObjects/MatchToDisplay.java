@@ -1,6 +1,7 @@
 package customDataObjects;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class MatchToDisplay {
 
@@ -56,5 +57,21 @@ public class MatchToDisplay {
                 ", provinceName='" + provinceName + '\'' +
                 ", mapName='" + mapName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MatchToDisplay that = (MatchToDisplay) o;
+        return Objects.equals(competitorClan, that.competitorClan) &&
+                Objects.equals(date, that.date) &&
+                Objects.equals(provinceName, that.provinceName) &&
+                Objects.equals(mapName, that.mapName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(competitorClan, date, provinceName, mapName);
     }
 }

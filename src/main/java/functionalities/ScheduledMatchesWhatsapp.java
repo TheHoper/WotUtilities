@@ -2,33 +2,48 @@ package functionalities;
 
 import customDataObjects.MatchToDisplay;
 import whatsappSelenium.SeleniumComponent;
+import whatsappSelenium.SeleniumKeyCommands;
 import wotAPI.WotApiConnector;
 import wotAPI.responseJsonConverter.ScheduledMatch;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class ScheduledMatchesWhatsapp {
+
+
     public static void main(String args[]) throws InterruptedException, IOException, URISyntaxException {
-        final String hamonClanID = "500218963";
-        WotApiConnector con = new WotApiConnector();
-        List<ScheduledMatch> schduledMatches = con.getScheduledMatches(hamonClanID);
-        List<MatchToDisplay> matchlist = new ArrayList<>();
+        //TODO remove matches that are done
+        List<ScheduledMatch> previousMatches = new ArrayList<>();
+        System.out.println("Service has started");
+        while (true) {
+            final String hamonClanID = "500218963";
 
-        for (ScheduledMatch match : schduledMatches) {
-            MatchToDisplay mtd = getMoreInfo(match, con);
-            matchlist.add(mtd);
+            WotApiConnector con = new WotApiConnector();
+
+            List<ScheduledMatch> newMatches = con.checkForNewMatches(hamonClanID, previousMatches);
+
+            if (!newMatches.isEmpty()) {
+                List<MatchToDisplay> matchlist = new ArrayList<>();
+                for (ScheduledMatch match : newMatches) {
+                    MatchToDisplay mtd = getMoreInfo(match, con);
+                    matchlist.add(mtd);
+                }
+                System.out.println("new matches to send: " + matchlist);
+
+                WhatsappSenderTask task = new WhatsappSenderTask("Kino", matchlist);
+                Thread t = new Thread(task);
+                t.start();
+
+            } else {
+                System.out.println("no new matches to send ");
+            }
+
+            previousMatches.addAll(newMatches);
+            System.out.println("sleeping now ");
+            Thread.sleep(30000);
         }
-        StringBuilder sb = new StringBuilder();
-        sb.append("Das sind unsere Matches heute (das ist ein Test die daten sind gemocked und nicht aktuell) \r");
-        matchlist.forEach(matchToDisplay -> sb.append("wir spielen gegen: " + matchToDisplay.getCompetitorClan() +" auf "+matchToDisplay.getMapName()+ " um Provinz "+matchToDisplay.getProvinceName()+" um so viel Uhr "+ matchToDisplay.getDate() +"\r"));
-        String message = sb.toString();
-        SeleniumComponent whatsappSender = new SeleniumComponent();
-        whatsappSender.sendMessageToWhatsappGroup("Kino",message);
-
     }
 
     private static MatchToDisplay getMoreInfo(ScheduledMatch match, WotApiConnector con) throws InterruptedException, IOException, URISyntaxException {

@@ -2,6 +2,8 @@ package wotAPI.responseJsonConverter;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Objects;
+
 public class ScheduledMatch {
     @SerializedName(value = "attack_type")
     private String attackType;
@@ -93,5 +95,21 @@ public class ScheduledMatch {
                 ", type='" + type + '\'' +
                 ", provinceName='" + provinceName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ScheduledMatch that = (ScheduledMatch) o;
+        return Objects.equals(frondID, that.frondID) &&
+                Objects.equals(competitorID, that.competitorID) &&
+                Objects.equals(scheduledTime, that.scheduledTime) &&
+                Objects.equals(provinceID, that.provinceID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(frondID, competitorID, scheduledTime, provinceID);
     }
 }

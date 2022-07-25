@@ -14,7 +14,9 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,35 +25,46 @@ public class WotApiConnector {
 
     private final String applicationID = "d9270406f542efcb6d950ff1f9e24bab";
 
+    public List<ScheduledMatch> checkForNewMatches(String clanID, List<ScheduledMatch> previousMatches) throws InterruptedException, IOException, URISyntaxException {
+
+        List<ScheduledMatch> currentlySchduledMatches = getScheduledMatches(clanID);
+
+        List<ScheduledMatch> newScheduledMatches = new ArrayList<>();
+
+        for (ScheduledMatch match : currentlySchduledMatches) {
+            if (!previousMatches.contains(match)) {
+                newScheduledMatches.add(match);
+            }
+        }
+        return newScheduledMatches;
+    }
+
+
     public List<ScheduledMatch> getScheduledMatches(String clanID) throws URISyntaxException, IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest req = HttpRequest.newBuilder(buildClanScheduledMatchesUri(applicationID, clanID))
                 .GET()
                 .build();
-        // HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
 
-        //---------------------------Mock--------------------------------------
-        StringBuilder sb = new StringBuilder();
-        File fileResponseMatch = new File("src/main/resources/responseMatches.json");
-        FileReader fr = new FileReader(fileResponseMatch);
-        BufferedReader br = new BufferedReader(fr);
-        br.lines().forEach(l -> sb.append(l + "\n"));
+        boolean mocked = true;
+        JsonObject obj;
+        if (mocked) {
+            StringBuilder sb = new StringBuilder();
+            File fileResponseMatch = new File("src/main/resources/responseMatches.json");
+            FileReader fr = new FileReader(fileResponseMatch);
+            BufferedReader br = new BufferedReader(fr);
+            br.lines().forEach(l -> sb.append(l + "\n"));
 
-        String jsonString = sb.toString();
+            String jsonString = sb.toString();
 
-        System.out.println(jsonString);
-        //-----------------------EndMock------------------------------------------
-
-
-        //JsonObject obj = new Gson().fromJson(response.body(), JsonObject.class);
-        JsonObject obj = new Gson().fromJson(jsonString, JsonObject.class);
+            obj = new Gson().fromJson(jsonString, JsonObject.class);
+        } else {
+            HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
+            obj = new Gson().fromJson(response.body(), JsonObject.class);
+        }
 
         Gson gson = new Gson();
         Response<ScheduledMatch> respWithSchedMatches = gson.fromJson(obj.getAsJsonObject(), ScheduledMatchesResponse.class);
-        System.out.println(respWithSchedMatches.getId());
-        System.out.println(respWithSchedMatches.getMeta());
-        System.out.println(respWithSchedMatches.getData());
-        System.out.println(respWithSchedMatches.getData().get(0).getFrondID());
         return respWithSchedMatches.getData();
     }
 
@@ -68,8 +81,9 @@ public class WotApiConnector {
         Matcher m = p.matcher(response.body());
         String clantag = null;
         if (m.find()) {
-            clantag = m.group(0);
+            clantag = m.group(1);
         }
+        System.out.println(clantag);
         return clantag;
     }
 
@@ -91,7 +105,6 @@ public class WotApiConnector {
         URI clanRequestUri = new URIBuilder(WotApiUris.clanbattlesBaseUrl)
                 .addParameter("application_id", applicationID)
                 .addParameter("clan_id", clanID)
-                .addParameter("fields", "tag")
                 .build();
         return clanRequestUri;
     }
@@ -100,6 +113,7 @@ public class WotApiConnector {
         URI clanRequestUri = new URIBuilder(WotApiUris.clanRequestBaseUrl)
                 .addParameter("application_id", applicationID)
                 .addParameter("clan_id", clanID)
+                .addParameter("field", "tag")
                 .build();
         return clanRequestUri;
     }
