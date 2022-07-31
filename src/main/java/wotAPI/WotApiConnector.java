@@ -25,9 +25,9 @@ public class WotApiConnector {
 
     private final String applicationID = "d9270406f542efcb6d950ff1f9e24bab";
 
-    public List<ScheduledMatch> checkForNewMatches(String clanID, List<ScheduledMatch> previousMatches) throws InterruptedException, IOException, URISyntaxException {
+    public List<ScheduledMatch> checkForNewMatches(String clanID, List<ScheduledMatch> previousMatches, boolean mockData) throws InterruptedException, IOException, URISyntaxException {
 
-        List<ScheduledMatch> currentlySchduledMatches = getScheduledMatches(clanID);
+        List<ScheduledMatch> currentlySchduledMatches = getScheduledMatches(clanID, mockData);
 
         List<ScheduledMatch> newScheduledMatches = new ArrayList<>();
 
@@ -40,13 +40,12 @@ public class WotApiConnector {
     }
 
 
-    public List<ScheduledMatch> getScheduledMatches(String clanID) throws URISyntaxException, IOException, InterruptedException {
+    public List<ScheduledMatch> getScheduledMatches(String clanID, boolean mocked) throws URISyntaxException, IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest req = HttpRequest.newBuilder(buildClanScheduledMatchesUri(applicationID, clanID))
                 .GET()
                 .build();
 
-        boolean mocked = false;
         JsonObject obj;
         if (mocked) {
             StringBuilder sb = new StringBuilder();

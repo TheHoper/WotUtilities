@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fbab99-89f5-4fc6-8e8d-b27d45a09c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customDataObjects/MatchToDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customDataObjects/MatchToDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functionalities/ScheduledMatchesWhatsapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/functionalities/WhatsappSenderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/functionalities/WhatsappSenderTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/whatsappSelenium/SeleniumComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whatsappSelenium/SeleniumComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whatsappSelenium/chromedriver103.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver103.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whatsappSelenium/chromedriver104.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver104.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whatsappSelenium/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wotAPI/WotApiConnector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\uni\WOTkampaClient\src\main\resources" />
       <recent name="G:\uni\WOTkampaClient\src\main\java\whatsappSelenium" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -121,7 +127,9 @@
       <workItem from="1658612145682" duration="4566000" />
       <workItem from="1658640450527" duration="8821000" />
       <workItem from="1658668833004" duration="11041000" />
-      <workItem from="1658736369494" duration="12144000" />
+      <workItem from="1658736369494" duration="17589000" />
+      <workItem from="1658845084760" duration="2525000" />
+      <workItem from="1658854109773" duration="1115000" />
     </task>
     <servers />
   </component>
@@ -133,10 +141,10 @@
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
     <state x="552" y="272" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658739872602" />
-    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1658741914398">
+    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1658846382783">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658741914398" />
+    <state x="903" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658846382783" />
     <state x="786" y="543" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1658643901153">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
@@ -149,30 +157,46 @@
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
     <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658647596162" />
-    <state width="2151" height="308" key="GridCell.Tab.0.bottom" timestamp="1658748367662">
+    <state width="2151" height="308" key="GridCell.Tab.0.bottom" timestamp="1658846914238">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="308" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658748367662" />
-    <state width="2151" height="308" key="GridCell.Tab.0.center" timestamp="1658748367662">
+    <state width="2151" height="308" key="GridCell.Tab.0.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658846914238" />
+    <state width="2151" height="308" key="GridCell.Tab.0.center" timestamp="1658846914238">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="308" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658748367662" />
-    <state width="2151" height="308" key="GridCell.Tab.0.left" timestamp="1658748367662">
+    <state width="2151" height="308" key="GridCell.Tab.0.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658846914238" />
+    <state width="2151" height="308" key="GridCell.Tab.0.left" timestamp="1658846914238">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="308" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658748367662" />
-    <state width="2151" height="308" key="GridCell.Tab.0.right" timestamp="1658748367662">
+    <state width="2151" height="308" key="GridCell.Tab.0.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658846914238" />
+    <state width="2151" height="308" key="GridCell.Tab.0.right" timestamp="1658846914238">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
-    <state width="2151" height="308" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658748367662" />
+    <state width="2151" height="308" key="GridCell.Tab.0.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658846914238" />
+    <state width="2151" height="425" key="GridCell.Tab.1.bottom" timestamp="1658845655743">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="425" key="GridCell.Tab.1.bottom/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658845655743" />
+    <state width="2151" height="425" key="GridCell.Tab.1.center" timestamp="1658845655742">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="425" key="GridCell.Tab.1.center/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658845655742" />
+    <state width="2151" height="425" key="GridCell.Tab.1.left" timestamp="1658845655742">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="425" key="GridCell.Tab.1.left/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658845655742" />
+    <state width="2151" height="425" key="GridCell.Tab.1.right" timestamp="1658845655742">
+      <screen x="0" y="0" width="2194" height="1234" />
+    </state>
+    <state width="2151" height="425" key="GridCell.Tab.1.right/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658845655742" />
     <state x="628" y="272" key="Maven.ArtifactSearchDialog" timestamp="1658669674280">
       <screen x="0" y="0" width="2194" height="1234" />
     </state>
     <state x="628" y="272" key="Maven.ArtifactSearchDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658669674280" />
-    <state x="-1304" y="1364" key="com.intellij.ide.util.TipDialog" timestamp="1658736376059">
+    <state x="-1304" y="1364" key="com.intellij.ide.util.TipDialog" timestamp="1659259873098">
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>
-    <state x="-1304" y="1364" key="com.intellij.ide.util.TipDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1658736376059" />
+    <state x="-1304" y="1364" key="com.intellij.ide.util.TipDialog/0.0.2194.1234/3840.930.1920.1200/-1680.1097.1344.800@0.0.2194.1234" timestamp="1659259873098" />
     <state x="-1680" y="1199" width="1358" height="783" key="dock-window-1" timestamp="1658644044367">
       <screen x="-1680" y="1097" width="1344" height="800" />
     </state>

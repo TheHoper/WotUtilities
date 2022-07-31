@@ -3,7 +3,6 @@ package functionalities;
 import customDataObjects.MatchToDisplay;
 import whatsappSelenium.SeleniumComponent;
 import whatsappSelenium.SeleniumKeyCommands;
-import wotAPI.responseJsonConverter.ScheduledMatch;
 
 import java.util.List;
 
@@ -21,12 +20,15 @@ public class WhatsappSenderTask implements Runnable {
     public void run() {
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Das sind unsere Matches heute: (das ist ein Test die daten sind gemocked und nicht aktuell) " + SeleniumKeyCommands.newLine + " ");
-        matchesToPost.forEach(matchToDisplay -> sb.append("Uhrzeit: " + matchToDisplay.getDate() +
-                ", Gegner: " + matchToDisplay.getCompetitorClan() +
-                " auf " + matchToDisplay.getMapName() +
-                " um Provinz " + matchToDisplay.getProvinceName() +
-                " " + SeleniumKeyCommands.newLine + " "));
+
+        sb.append(" Das sind unsere Matches heute: " + SeleniumKeyCommands.newLine + " ");
+        matchesToPost.forEach(matchToDisplay -> sb.append(" Match " + matchToDisplay.getMatchNumber() + " " + SeleniumKeyCommands.newLine + " " +
+                "Zeit: " + matchToDisplay.getDate() + " " + SeleniumKeyCommands.newLine + " " +
+                "Gegner: " + matchToDisplay.getCompetitorClan() + " " + SeleniumKeyCommands.newLine + " " +
+                "Map: " + matchToDisplay.getMapName() + " " + " " + " " + SeleniumKeyCommands.newLine + " " +
+                "Provinz: " + matchToDisplay.getProvinceName() +
+                " " + SeleniumKeyCommands.newLine + " " + SeleniumKeyCommands.newLine + " "));
+
         String message = sb.toString();
         System.out.println(message);
         SeleniumComponent whatsappSender = new SeleniumComponent();

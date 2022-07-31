@@ -9,12 +9,21 @@ public class MatchToDisplay {
     private Date date;
     private String provinceName;
     private String mapName;
+    private int matchNumber;
 
     public MatchToDisplay(String competitorClan, Date date, String provinceName, String mapName) {
         this.competitorClan = competitorClan;
         this.date = date;
         this.provinceName = provinceName;
         this.mapName = mapName;
+    }
+
+    public int getMatchNumber() {
+        return matchNumber;
+    }
+
+    public void setMatchNumber(int matchNumber) {
+        this.matchNumber = matchNumber;
     }
 
     public String getCompetitorClan() {
@@ -56,6 +65,7 @@ public class MatchToDisplay {
                 ", date=" + date +
                 ", provinceName='" + provinceName + '\'' +
                 ", mapName='" + mapName + '\'' +
+                ", matchNumber = '" + matchNumber + "'" +
                 '}';
     }
 

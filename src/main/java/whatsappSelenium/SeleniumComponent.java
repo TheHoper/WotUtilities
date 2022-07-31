@@ -1,10 +1,14 @@
 package whatsappSelenium;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Files;
 import java.time.Duration;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.asynchttpclient.uri.Uri;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,9 +17,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,12 +25,18 @@ public class SeleniumComponent {
 
 
     public void sendMessageToWhatsappGroup(String groupIdentifier, String message) {
-        System.setProperty("webdriver.chrome.driver", "src/main/java/whatsappSelenium/chromedriver103.exe");
+
+
+        String chromeExe = "G:\\uni\\WOTkampaClient\\target\\classes\\chromedriver103.exe";
+        String profilePath = "G:\\uni\\WOTkampaClient\\target\\classes\\chromeWhatsappTestProfile";
+        System.out.println("this is the path" + chromeExe);
+        System.setProperty("webdriver.chrome.driver", chromeExe);
 
         ChromeOptions options = new ChromeOptions();
-        File profile = new File("src/main/resources/chromeWhatsappTestProfile");
 
-        String fullyQualifiedPath = profile.getAbsolutePath();
+        //File profile = new File(profilePath.getPath());
+
+        String fullyQualifiedPath = profilePath;
         System.out.println(fullyQualifiedPath);
 
         options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36");
@@ -57,10 +64,13 @@ public class SeleniumComponent {
 
             wait.until(SeleniumComponent::tenSecondsAreOver);
             System.out.println("new matches were propagated");
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             driver.close();
             driver.quit();
         }
+
     }
 
     private void typeMessageWithSpecialChars(WebElement textbox, String message) {
